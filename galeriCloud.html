@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galerie Formation — Université Senghore</title>
+  <meta name="description" content="Téléchargez vos photos & vidéos de la formation. Découvrez mes services (photo/vidéo, contenu, IA & outils collaboratifs) et laissez un avis." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior:smooth; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+  </style>
+</head>
+<body class="bg-neutral-60 text-neutral-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-neutral-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <!-- Logo minimal -->
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-2xl bg-neutral-900 text-white font-bold">RM</span>
+        <div class="leading-tight">
+          <p class="font-semibold">Robert Mafuta</p>
+          <p class="text-xs text-neutral-500">Photo · Vidéo · IA & Collaboration</p>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#galerie" class="hover:text-neutral-900 text-neutral-600">Galerie</a>
+        <a href="#services" class="hover:text-neutral-900 text-neutral-600">Services</a>
+        <a href="#avis" class="hover:text-neutral-900 text-neutral-600">Avis</a>
+        <a href="#contact" class="hover:text-neutral-900 text-neutral-600">Contact</a>
+      </nav>
+      <a href="https://wa.me/message/2PQ5PFBISNONF1" class="inline-flex items-center gap-2 rounded-2xl bg-neutral-900 text-white px-4 py-2 text-sm font-medium shadow-sm hover:shadow transition">
+        Me contacter
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0">
+      <!-- Remplacez l'image ci-dessous par une bannière de l'événement -->
+      <img src="/moi/furist.jpg" alt="Formation" class="h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-tr from-black/70 via-black/40 to-transparent"></div>
+    </div>
+    <div class="relative max-w-6xl mx-auto px-4 py-28 md:py-40">
+      <div class="max-w-2xl text-white">
+        <p class="uppercase tracking-widest text-xs text-white/80">Merci pour votre participation</p>
+        <h1 class="text-3xl  md:text-5xl font-extrabold leading-tight mt-2 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-900 ">Vos photos & vidéos de la formation sont prêtes 📸</h1>
+        <p class="text-white/90 mt-4 md:text-lg">Téléchargez vos souvenirs et découvrez comment mes services (photo/vidéo, contenu & IA) peuvent booster votre communication.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#galerie" class="inline-flex items-center justify-center rounded-2xl bg-white text-neutral-900 px-5 py-3 font-semibold shadow-sm hover:shadow transition">Accéder à la galerie</a>
+          <a href="#services" class="inline-flex items-center justify-center rounded-2xl bg-white/10 ring-1 ring-white/30 text-white px-5 py-3 font-medium hover:bg-white/20 transition">Découvrir mes services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bande preuves sociales -->
+  <section class="border-b border-neutral-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <div class="p-3 rounded-2xl bg-neutral-50 shadow-lg">
+        <p class="lg:text-5xl text-4xl font-bold mb-2 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-900 bg-clip-text text-transparent">2 jours</p>
+        <p class="text-sm text-neutral-600">de couverture</p>
+      </div>
+      <div class="p-3 rounded-2xl bg-neutral-50 shadow-lg">
+        <p class="lg:text-5xl text-4xl font-bold mb-2 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-900 bg-clip-text text-transparent">150+</p>
+        <p class="text-sm text-neutral-600">photos & clips</p>
+      </div>
+      <div class="p-3 rounded-2xl bg-neutral-50 shadow-lg">
+        <p class="lg:text-5xl text-4xl font-bold mb-2 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-900 bg-clip-text text-transparent">40+</p>
+        <p class="text-sm text-neutral-600">participants</p>
+      </div>
+      <div class="p-3 rounded-2xl bg-neutral-50 shadow-lg">
+        <p class="lg:text-5xl text-4xl font-bold mb-2 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-900 bg-clip-text text-transparent ">IA & Outils</p>
+        <p class="text-sm text-neutral-600">au cœur de l'atelier</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerie -->
+  <section id="galerie" class="max-w-6xl mx-auto px-4 py-12">
+    <div class="flex items-end justify-between gap-4">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-extrabold">Galerie de la formation</h2>
+        <p class="text-neutral-600 mt-1">Téléchargez vos photos en haute résolution. (Aperçus filigranés)</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <input id="filtre" type="text" placeholder="Filtrer (jour, activité, nom)" class="w-52 md:w-72 rounded-2xl border border-neutral-300 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900/20" />
+      </div>
+    </div>
+
+    <!-- Astuce d'accès par code (facultatif) -->
+    <details class="mt-4 rounded-2xl bg-neutral-100 p-4 open:ring-1 ring-neutral-200">
+      <summary class="cursor-pointer text-sm font-medium text-neutral-700">🔐 Optionnel : Protéger la section téléchargements par un petit code (front-end)</summary>
+      <div class="mt-3 grid gap-3 md:grid-cols-[1fr_auto]">
+        <input id="codeInput" type="password" placeholder="Entrer le code d'accès (ex: 2025IA)" class="rounded-2xl border border-neutral-300 px-4 py-2 text-sm" />
+        <button id="codeBtn" class="rounded-2xl bg-neutral-900 text-white px-4 py-2 text-sm font-semibold">Déverrouiller les téléchargements</button>
+        <p id="codeMsg" class="text-sm text-neutral-600 md:col-span-2">Par défaut, les liens de téléchargement sont masqués. Changez le code dans le script en bas du fichier.</p>
+      </div>
+    </details>
+
+    <div id="grid" class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <!-- CARTE GALERIE (dupliquez et remplacez les images/infos) -->
+      <!-- Tip: remplacez src par vos miniatures optimisées; remplacez data-tags pour le filtre; remplacez data-full pour le fichier HD -->
+      <article class="group rounded-2xl overflow-hidden border border-neutral-200 bg-white" data-tags="jour1 keynote IA">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1200&auto=format&fit=crop" alt="Conférence" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,rgba(0,0,0,.05)_0,rgba(0,0,0,.05)_2px,transparent_2px,transparent_6px)]"></div>
+          <span class="absolute left-2 top-2 text-xs rounded-full bg-white/90 px-2 py-1">Jour 1</span>
+        </div>
+        <div class="p-3">
+          <p class="font-semibold">Ouverture & Keynote</p>
+          <p class="text-xs text-neutral-500">Hashtags: IA, keynote</p>
+          <div class="mt-3 flex items-center justify-between">
+            <a class="text-sm text-neutral-600 underline underline-offset-4 hover:text-neutral-900" href="#" data-full="/assets/photos/photo-001.jpg" download hidden>⤓ Télécharger</a>
+            <button class="text-sm rounded-xl bg-neutral-100 px-3 py-1 hover:bg-neutral-200" onclick="previewImage(this)">Aperçu</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="group rounded-2xl overflow-hidden border border-neutral-200 bg-white" data-tags="jour1 atelier collaboration">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?q=80&w=1200&auto=format&fit=crop" alt="Atelier" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,rgba(0,0,0,.05)_0,rgba(0,0,0,.05)_2px,transparent_2px,transparent_6px)]"></div>
+          <span class="absolute left-2 top-2 text-xs rounded-full bg-white/90 px-2 py-1">Jour 1</span>
+        </div>
+        <div class="p-3">
+          <p class="font-semibold">Atelier Outils Collaboratifs</p>
+          <p class="text-xs text-neutral-500">Hashtags: collaboration, pratique</p>
+          <div class="mt-3 flex items-center justify-between">
+            <a class="text-sm text-neutral-600 underline underline-offset-4 hover:text-neutral-900" href="#" data-full="/assets/photos/photo-045.jpg" download hidden>⤓ Télécharger</a>
+            <button class="text-sm rounded-xl bg-neutral-100 px-3 py-1 hover:bg-neutral-200" onclick="previewImage(this)">Aperçu</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="group rounded-2xl overflow-hidden border border-neutral-200 bg-white" data-tags="jour2 remise diplomes">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1200&auto=format&fit=crop" alt="Remise" class="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,rgba(0,0,0,.05)_0,rgba(0,0,0,.05)_2px,transparent_2px,transparent_6px)]"></div>
+          <span class="absolute left-2 top-2 text-xs rounded-full bg-white/90 px-2 py-1">Jour 2</span>
+        </div>
+        <div class="p-3">
+          <p class="font-semibold">Clôture & Remise</p>
+          <p class="text-xs text-neutral-500">Hashtags: remise, célébration</p>
+          <div class="mt-3 flex items-center justify-between">
+            <a class="text-sm text-neutral-600 underline underline-offset-4 hover:text-neutral-900" href="#" data-full="/assets/photos/photo-120.jpg" download hidden>⤓ Télécharger</a>
+            <button class="text-sm rounded-xl bg-neutral-100 px-3 py-1 hover:bg-neutral-200" onclick="previewImage(this)">Aperçu</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ajoutez autant de cartes que nécessaire -->
+    </div>
+
+    <!-- Modal Aperçu -->
+    <div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4">
+      <div class="max-w-5xl w-full rounded-2xl overflow-hidden bg-white">
+        <div class="flex items-center justify-between border-b border-neutral-200 px-4 py-3">
+          <p class="font-semibold">Aperçu</p>
+          <button class="rounded-xl bg-neutral-100 px-3 py-1" onclick="closeLightbox()">Fermer</button>
+        </div>
+        <div class="p-4">
+          <img id="lightboxImg" src="" alt="Aperçu" class="w-full h-auto rounded-xl" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- CARROUSEL PARTENAIRES -->
+<section class="bg-gradient-to-l from-black to-blue-900 text-center">
+  <h2 class="text-4xl font-bold text-center text-sky-300 py-4">Les savez vous ?</h2>
+  <p class="text-white">Derrière chaque professionnel qui est plus visible en ligne et recommandé souvent se cache un developpeur web/mobile ?</p>
+  
+  <div class="overflow-hidden w-full p-4">
+    <div class="flex animate-slide gap-10">
+      <!-- On duplique les logos pour un scroll infini -->
+      <img src="/moi/diplome.jpg" class="w-100 h-60 object-contain rounded-xl" alt="Partenaire 1">
+      <img src="/moi/formation.jpg" class="w-100 h-60 object-contain rounded-xl" alt="Partenaire 2">
+      <img src="/moi/illustration.jpg" class="w-100 h-60 object-contain rounded-xl" alt="Partenaire 3">
+      <img src="/moi/Ja.jpg" class="w-100 h-80 object-contain rounded-xl" alt="Partenaire 1 bis">
+      <img src="/images/F.Vodacom.jpg" class="w-100 h-60 object-contain rounded-xl" alt="Partenaire 2 bis">
+      <img src="/moi/formation.jpg" class="w-100 h-60 object-contain rounded-xl" alt="Partenaire 3 bis">
+    </div>
+  </div>
+</section>
+
+  <!-- Services -->
+  <section id="services" class="bg-white border-t border-b border-neutral-200">
+    <div class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Comment je peux vous aider</h2>
+      <p class="text-neutral-600 mt-1">Une offre simple, orientée résultats.</p>
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        <div class="text-white text-2xl rounded-xl border border-neutral-200 p-5 bg-neutral-50 bg-gradient-to-tr from-blue-950 via-pink-500 to-transparent">
+          <h3 class="font-semibold">Reportage Photo/Vidéo</h3>
+          <div class="flex items-center content-center justify-center">
+            <div class="flex-60% ">
+            <p class="text-sm text-neutral-600 mt-1">Couverture d'événements, interviews, aftermovies, portraits d'équipe.</p>
+          <ul class="mt-3 text-sm list-disc list-inside text-neutral-700">
+            <li>Delivery rapide & organisé</li>
+            <li>Pack réseaux sociaux</li>
+          </ul>
+          </div>
+          <div class="flex-[40%]">
+            <img src="/moi/yout.png" alt="coach tony" class="h-40 w-40 rounded-full ">
+          </div>
+          </div>
+        </div>
+        <div class="grid rounded-2xl border border-neutral-200 p-5 bg-neutral-50 bg-gradient-to-tr from-blue-950 via-pink-500 to-transparent">
+          <h3 class="font-semibold text-2xl text-white">Contenu & Social Media</h3>
+          <div class="flex content-center items-center">
+            <div class="flex-60%">
+                <p class="text-sm text-neutral-600 mt-1">Calendrier éditorial, formats courts, optimisation LinkedIn.</p>
+          <ul class="mt-3 text-sm list-disc list-inside text-neutral-700">
+            <li>Template brandés</li>
+            <li>Kit publication</li>
+          </ul>
+            </div>
+            <div class="flex-40%">
+                <img src="/moi/Link.png" alt="" class="h-40 w-40 rounded-xl">
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl text-2xl text-white border border-neutral-200 p-5 bg-neutral-50 bg-gradient-to-tr from-blue-950 via-pink-500 to-transparent">
+          <h3 class="font-semibold">IA & Outils Collaboratifs</h3>
+          <p class="text-sm text-neutral-600 mt-1">Intégration de l'IA dans vos processus, automatisation & formation.</p>
+          <div class="flex content-center items-center justify-between">
+            <div class="flex-60%">
+                <ul class="mt-3 text-sm list-disc list-inside text-neutral-700">
+            <li>Audit rapide</li>
+            <li>Ateliers pratiques</li>
+            <li>Création de site web/mobile</li>
+          </ul>
+            </div>
+            <div class="flex-40%">
+                <img src="/moi/ia.jpg" alt="" class="h-40 w-40 rounded-full">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <div class="grid md:grid-cols-[1fr_1.4fr] gap-6 items-center">
+      <img src="/moi/moi.jpg" alt="Portrait" class="w-full h-72 md:h-[22rem] object-cover rounded-2xl border border-neutral-200" />
+      <div>
+        <h2 class="text-2xl md:text-3xl font-extrabold">À propos de moi</h2>
+        <p class="text-neutral-700 mt-2">Je suis <strong>Robert Mafuta</strong>,Developpeur fullstack, j'acommpagne des entreprises et des particuliers à transformer les besoins de leur clients à des expériences numérique incroyable !</p>
+        <div class="mt-4 grid gap-3 sm:grid-cols-2">
+          <div class="rounded-2xl bg-neutral-100 p-4">
+            <p class="text-sm text-neutral-600">Industries</p>
+            <p class="font-semibold">Éducation, ONG, Entreprises</p>
+          </div>
+          <div class="rounded-2xl bg-neutral-100 p-4">
+            <p class="text-sm text-neutral-600">Livrables</p>
+            <p class="font-semibold">Galeries privées, kits sociaux, formations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avis / Formulaire -->
+  <section id="avis" class="bg-white border-t border-b border-neutral-200">
+    <div class="max-w-6xl mx-auto px-4 py-12">
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold">Votre avis compte 📝</h2>
+          <p class="text-neutral-600 mt-1">Un petit mot sur la formation ou les photos ? Merci 🙏</p>
+          <form id="avisForm" class="mt-6 grid gap-4">
+            <!-- Remplacez l'action par votre endpoint Formspree / Google Forms ou backend -->
+            <input name="nom" required type="text" placeholder="Nom complet" class="rounded-2xl border border-neutral-300 px-4 py-2" />
+            <input name="email" required type="email" placeholder="Email professionnel" class="rounded-2xl border border-neutral-300 px-4 py-2" />
+            <input name="entreprise" type="text" placeholder="Entreprise / Organisation" class="rounded-2xl border border-neutral-300 px-4 py-2" />
+            <select name="role" class="rounded-2xl border border-neutral-300 px-4 py-2">
+              <option value="">Votre rôle</option>
+              <option>Participant(e)</option>
+              <option>Formateur / Intervenant</option>
+              <option>Organisation / Sponsor</option>
+            </select>
+            <textarea name="message" required rows="4" placeholder="Votre message / témoignage" class="rounded-2xl border border-neutral-300 px-4 py-2"></textarea>
+            <label class="text-sm text-neutral-600 inline-flex items-center gap-2"><input type="checkbox" required class="rounded" /> J'accepte d'être recontacté(e) au sujet des médias et services.</label>
+            <button class="rounded-2xl bg-neutral-900 text-white px-5 py-3 font-semibold">Envoyer mon avis</button>
+            <p id="avisMsg" class="text-sm text-green-700 hidden">Merci ! Votre avis a été envoyé.</p>
+          </form>
+        </div>
+        <div class="rounded-2xl border border-neutral-200 p-5 bg-neutral-50">
+          <h3 class="font-semibold">Ils en parlent</h3>
+          <ul class="mt-3 space-y-3 text-sm text-neutral-700">
+            <li class="rounded-xl bg-white border border-neutral-200 p-4">“Des livrables rapides et pros. On a pu communiquer dès le lendemain.” — <span class="font-medium">Responsable Com.</span></li>
+            <li class="rounded-xl bg-white border border-neutral-200 p-4">“Atelier clair, j'utilise maintenant des prompts concrets pour mes emails.” — <span class="font-medium">Participant</span></li>
+            <li class="rounded-xl bg-white border border-neutral-200 p-4">“Organisation nickel, je recommande.” — <span class="font-medium">Chargée de projet</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-12">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-extrabold">On travaille ensemble ?</h2>
+        <p class="text-neutral-600 mt-1">Expliquez votre besoin, je reviens avec une proposition simple et claire.</p>
+        <div class="mt-4 rounded-2xl bg-neutral-100 p-4">
+          <p class="text-sm text-neutral-700"><span class="font-semibold">Email :</span> robertmafuta2@gmail.com</p>
+          <p class="text-sm text-neutral-700"><span class="font-semibold">Téléphone :</span> +243 838 451 285</p>
+          <p class="text-sm text-neutral-700"><span class="font-semibold">Adresse :</span> Ngaliema / Sillikin Village</p>
+        </div>
+      </div>
+      <form id="contactForm" class="grid gap-4">
+        <input name="nom" required type="text" placeholder="Nom complet" class="rounded-2xl border border-neutral-300 px-4 py-2" />
+        <input name="email" required type="email" placeholder="Email" class="rounded-2xl border border-neutral-300 px-4 py-2" />
+        <input name="entreprise" type="text" placeholder="Entreprise (optionnel)" class="rounded-2xl border border-neutral-300 px-4 py-2" />
+        <textarea name="message" required rows="4" placeholder="Votre message" class="rounded-2xl border border-neutral-300 px-4 py-2"></textarea>
+        <button class="rounded-2xl bg-neutral-900 text-white px-5 py-3 font-semibold">Envoyer</button>
+        <p id="contactMsg" class="text-sm text-green-700 hidden">Merci, message envoyé !</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-neutral-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-neutral-600 flex flex-col md:flex-row items-center justify-between gap-3">
+      <p>© <span id="year"></span> Votre Nom. Tous droits réservés.</p>
+      <div class="flex items-center gap-4">
+        <a href="#galerie" class="hover:text-neutral-900">Galerie</a>
+        <a href="#services" class="hover:text-neutral-900">Services</a>
+        <a href="#contact" class="hover:text-neutral-900">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Année dynamique
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Filtre galerie par tags (jour, activité, nom)
+    const filtre = document.getElementById('filtre');
+    const cards = Array.from(document.querySelectorAll('#grid article'));
+    filtre?.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase();
+      cards.forEach(c => {
+        const tags = (c.getAttribute('data-tags')||'').toLowerCase();
+        const text = c.innerText.toLowerCase();
+        c.style.display = (tags.includes(q) || text.includes(q)) ? '' : 'none';
+      });
+    });
+
+    // Lightbox preview
+    window.previewImage = (btn) => {
+      const card = btn.closest('article');
+      const img = card.querySelector('img');
+      const src = img.getAttribute('src');
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightbox').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    };
+    window.closeLightbox = () => {
+      document.getElementById('lightbox').classList.add('hidden');
+      document.body.style.overflow = '';
+    };
+
+    // (Optionnel) Code d'accès pour afficher les liens de téléchargement
+    const ACCESS_CODE = '2025IA'; // <-- changez ce code
+    const codeBtn = document.getElementById('codeBtn');
+    codeBtn?.addEventListener('click', () => {
+      const input = document.getElementById('codeInput');
+      const msg = document.getElementById('codeMsg');
+      const ok = input.value.trim() === ACCESS_CODE;
+      const links = document.querySelectorAll('[data-full]');
+      links.forEach(a => { a.hidden = !ok; if (ok) a.setAttribute('href', a.getAttribute('data-full')); });
+      msg.textContent = ok ? 'Téléchargements déverrouillés.' : 'Code incorrect. Réessayez.';
+      msg.classList.toggle('text-red-600', !ok);
+      msg.classList.toggle('text-green-700', ok);
+    });
+
+    // Faux envoi de formulaires (remplacez par votre backend/Formspree)
+    const avisForm = document.getElementById('avisForm');
+    const avisMsg = document.getElementById('avisMsg');
+    avisForm?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      avisMsg.classList.remove('hidden');
+      avisForm.reset();
+    });
+    const contactForm = document.getElementById('contactForm');
+    const contactMsg = document.getElementById('contactMsg');
+    contactForm?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      contactMsg.classList.remove('hidden');
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>
